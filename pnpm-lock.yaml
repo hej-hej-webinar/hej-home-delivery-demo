@@ -623,7 +623,7 @@ packages:
     engines: {node: '>=18'}
 
   ci-owned-parser@file:demo-packages/ci-owned-parser/ci-owned-parser-0.0.1.tgz:
-    resolution: {integrity: sha512-VoAS+geJdglTmfywS9dgJJHieNgUgknSrfZfR5cPoykr/ptpYBpc6RHs3VzbOjDS63nTyL0x5h/PcJdDSGpRrQ==, tarball: file:demo-packages/ci-owned-parser/ci-owned-parser-0.0.1.tgz}
+    resolution: {integrity: sha512-2dsefUqalPne7iP45gstPry+04ddo0r5U7Te9PRpf3QqHShY/X2sQGbhIVUKpKL8xs3O/uyvqKbmZ2ojZTtEhw==, tarball: file:demo-packages/ci-owned-parser/ci-owned-parser-0.0.1.tgz}
     version: 0.0.1
 
   combined-stream@1.0.8:
