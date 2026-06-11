@@ -50,10 +50,10 @@ Open PR 5, **Add customer lookup helper**.
 
 1. Show the `child_process.exec` implementation in `src/helpers/importPreview.ts`.
 2. Open the CodeQL alert for command injection.
-3. Show Copilot Autofix if available. If not, switch to the prepared fix branch and show the safe implementation that avoids shell execution.
+3. Show Copilot Autofix if available from the org-managed CodeQL default setup. If not, switch to the prepared fix branch and show the safe implementation that avoids shell execution.
 4. Use the Security Campaign view as the scaling story: focus a small set of alerts, assign ownership, and track remediation.
 
-Fallback: show the prepared fix branch and the CodeQL workflow output.
+Fallback: show the prepared fix branch and the CodeQL default setup output.
 
 ## Demo 6: Plan mode, adversarial challenge, and governed plugin pattern
 
