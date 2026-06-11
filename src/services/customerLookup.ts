@@ -1,7 +1,7 @@
-import customerFixture from "../fixtures/customers.fixture.json";
+import { syntheticCustomers } from "../fixtures/customers.synthetic";
 import type { CustomerRecord } from "../types";
 
-const customers = customerFixture as CustomerRecord[];
+const customers: CustomerRecord[] = syntheticCustomers;
 
 export function findCustomerById(customerId: string): CustomerRecord | undefined {
   return customers.find((customer) => customer.customerId.toLowerCase() === customerId.toLowerCase());

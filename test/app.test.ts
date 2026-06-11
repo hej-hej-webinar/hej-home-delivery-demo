@@ -13,19 +13,19 @@ describe("Hej Home Delivery API", () => {
   it("looks up a seeded customer by email", async () => {
     const response = await request(app)
       .get("/api/customers/lookup")
-      .query({ email: "ava.thompson@example.test" });
+      .query({ email: "customer-001@example.invalid" });
 
     expect(response.status).toBe(200);
-    expect(response.body.customer.customerId).toBe("CUST-1001");
+    expect(response.body.customer.customerId).toBe("SYNTH-CUSTOMER-001");
   });
 
   it("imports delivery preferences from csv text", async () => {
     const response = await request(app).post("/api/import/delivery-preferences").send({
-      csvText: "CUST-1001,09:00-11:00,Leave with concierge\nCUST-1002,18:00-20:00,Back gate"
+      csvText: "SYNTH-CUSTOMER-001,09:00-11:00,Synthetic delivery note\nSYNTH-CUSTOMER-002,18:00-20:00,Synthetic fallback note"
     });
 
     expect(response.status).toBe(200);
     expect(response.body.imported).toBe(2);
-    expect(response.body.customerIds).toEqual(["CUST-1001", "CUST-1002"]);
+    expect(response.body.customerIds).toEqual(["SYNTH-CUSTOMER-001", "SYNTH-CUSTOMER-002"]);
   });
 });
