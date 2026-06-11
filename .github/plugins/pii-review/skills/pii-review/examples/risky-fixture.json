@@ -1,0 +1,12 @@
+{
+  "customerId": "CUST-1001",
+  "fullName": "Ava Thompson",
+  "email": "ava.thompson@example.test",
+  "phone": "+44 7700 900111",
+  "nationalIdentifier": "SE-19700230-0000",
+  "address": {
+    "line1": "12 Orchard Lane",
+    "city": "Leeds",
+    "postcode": "LS1 4AB"
+  }
+}

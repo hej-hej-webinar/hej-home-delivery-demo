@@ -1,0 +1,21 @@
+name: pii-review
+version: 0.1.0
+description: Public-safe fixture and likely PII hygiene review for pull requests.
+owner: demo-security-champions
+contact: demo-security-champions@example.invalid
+status: demo
+license: MIT
+agents:
+  - agents/pii-review.agent.md
+skills:
+  - skills/pii-review/SKILL.md
+governance:
+  review_required: true
+  approved_for:
+    - public-demo-repositories
+    - fixture-review
+    - pull-request-review
+  not_approved_for:
+    - production-data-classification
+    - incident-response-with-real-customer-data
+    - replacing human privacy review
