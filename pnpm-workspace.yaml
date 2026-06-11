@@ -1,4 +1,8 @@
 packages:
   - .
+minimumReleaseAge: 2880
+minimumReleaseAgeStrict: true
+strictDepBuilds: true
 allowBuilds:
   esbuild: true
+  sharp: true
