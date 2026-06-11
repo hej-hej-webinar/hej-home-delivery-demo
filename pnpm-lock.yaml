@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      ci-owned-parser:
+        specifier: file:demo-packages/ci-owned-parser/ci-owned-parser-0.0.1.tgz
+        version: file:demo-packages/ci-owned-parser/ci-owned-parser-0.0.1.tgz
       express:
         specifier: ^4.21.2
         version: 4.22.2
@@ -618,6 +621,10 @@ packages:
   chai@6.2.2:
     resolution: {integrity: sha512-NUPRluOfOiTKBKvWPtSD4PhFvWCqOi0BGStNWs57X9js7XGTprSmFoz5F0tWhR4WPjNeR9jXqdC7/UpSJTnlRg==}
     engines: {node: '>=18'}
+
+  ci-owned-parser@file:demo-packages/ci-owned-parser/ci-owned-parser-0.0.1.tgz:
+    resolution: {integrity: sha512-VoAS+geJdglTmfywS9dgJJHieNgUgknSrfZfR5cPoykr/ptpYBpc6RHs3VzbOjDS63nTyL0x5h/PcJdDSGpRrQ==, tarball: file:demo-packages/ci-owned-parser/ci-owned-parser-0.0.1.tgz}
+    version: 0.0.1
 
   combined-stream@1.0.8:
     resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
@@ -1594,6 +1601,8 @@ snapshots:
       get-intrinsic: 1.3.0
 
   chai@6.2.2: {}
+
+  ci-owned-parser@file:demo-packages/ci-owned-parser/ci-owned-parser-0.0.1.tgz: {}
 
   combined-stream@1.0.8:
     dependencies:
